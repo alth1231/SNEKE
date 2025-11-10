@@ -12,7 +12,6 @@ pygame.display.set_caption("~~SNEKE~~")
 
 # Set FSP and clock
 # TODO: make a variable (constant) called FPS and initialize to 20
-clock = pygame.time.Clock()
 
 # Set game values
 # TODO: make a variable (constant) named SNAKE_SIZE and initialize to 20

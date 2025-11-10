@@ -1,3 +1,5 @@
+from email.quoprimime import header_check
+
 import pygame, random
 
 # Initialize pygame
@@ -10,11 +12,23 @@ display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption("~~SNEKE~~")
 
 # Set FSP and clock
-
+FPS= 20
+Clock = pygame.time.Clock()
 # Set game values
+SNAKE_SIZE = 20
+head_x = WINDOW_WIDTH * 1200/2
+head_y = WINDOW_HEIGHT* 1200/2 + 10
 
+snake_dx = 0
+snake_dy = 0
+
+score = 0
 # Set colors
-
+GREEN = (0, 255, 0)
+DARKGREEN = (10, 50, 10)
+RED = (255, 0, 0)
+DARKRED = (150, 0, 0)
+WHITE = (0, 0, 0)
 # Set fonts
 
 # Set text
