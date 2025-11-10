@@ -16,8 +16,8 @@ FPS= 20
 Clock = pygame.time.Clock()
 # Set game values
 SNAKE_SIZE = 20
-head_x = WINDOW_WIDTH * 1200//2
-head_y = WINDOW_HEIGHT* 1200//2 + 10
+head_x = WINDOW_WIDTH//2
+head_y = WINDOW_HEIGHT//2 + 100
 
 snake_dx = 0
 snake_dy = 0
