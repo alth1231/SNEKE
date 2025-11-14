@@ -54,7 +54,7 @@ title_rect.center = (WINDOW_WIDTH // 2,
 # TODO: place the center of continue_rect  to an x coordinate of half the WINDOW_WIDTH and y coordinate of half the WINDOW_HEIGHT + 64
 
 # Set sounds and music
-pick_up_sound = pygame.mixer.Sound("pickup_sound.wav")
+#pick_up_sound = pygame.mixer.Sound("pickup_sound.wav")
 
 # Set images (in this case, use simple rects...so just create their coordinates)
 # For a rectangle you need (top-left x, top-left y, width, height)
@@ -124,7 +124,7 @@ while running:
     # Update display and tick clock
     # TODO: Read below. 2 TODO's, require's explanation
     '''
-    1. Now we update the display by calling pygame.display's update function passing in no arguments.
+    1. Now we update the display by calling pygame.display's update function passing in no arguments().
     
     2. The while loop we are in is super fast.  We actually need to slow it down to our FPS of 20 seconds.  
     That's what our clock variable will do for us.  What until 20 frames have passed every second.  Then continue.  
