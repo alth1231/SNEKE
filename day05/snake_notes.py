@@ -54,7 +54,7 @@ title_rect.center = (WINDOW_WIDTH // 2,
 # TODO: place the center of continue_rect  to an x coordinate of half the WINDOW_WIDTH and y coordinate of half the WINDOW_HEIGHT + 64
 
 # Set sounds and music
-pick_up_sound = pygame.mixer.Sound("pickup_sound.wav")
+#pick_up_sound = pygame.mixer.Sound("pickup_sound.wav")
 
 # Set images (in this case, use simple rects...so just create their coordinates)
 # For a rectangle you need (top-left x, top-left y, width, height)
@@ -110,12 +110,12 @@ while running:
     if head_rect.left < 0 or head_rect.right > WINDOW_WIDTH or head_rect.top < 0 or head_rect.bottom > WINDOW_HEIGHT or head_coord in body_coords:
         # TODO: call display_surface's blit function passing in game_over_text and game_over_rect
         # TODO: repeat for continue
-        # TODO: call pygame.display_update()
+        # TODO: call pygame.display.update()
 
         #Pause the game until the player presses a key, then reset the game
         # TODO: assign True to is_paused
 
-        pass # TODO: remove this line.
+
 
     # Check for unpause.  If so reset game.
     while is_paused:
@@ -190,6 +190,7 @@ while running:
     1. "Call pygame.draw.rect and passing in display_surface, GREEN, and head_coord for the head of the snake
     2. "Call pygame.draw.rct again pass in display_surface, RED, and apple_coord for the apple.  
     '''
+
 
     # Update display and tick clock
     # TODO: Read below. 2 TODO's, require's explanation
