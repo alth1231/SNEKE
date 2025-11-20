@@ -88,11 +88,11 @@ while running:
             # TODO: check if the event.key is pygame.K_UP.
                 # Inside the block of the K_UP if statement.
                 # TODO: assign 0 'TO' snake_dx.  We may have been moving left or right.  This cancels that movement out.
-                # TODO: assign -1 * SNAKE_SIZE 'TO' snake_dx. This moves the snake 1 SNAKE_SIZE up.
+                # TODO: assign -1 * SNAKE_SIZE 'TO' snake_du. This moves the snake 1 SNAKE_SIZE up.
             # TODO: check if the event.key is pygame.K_DOWN.
                 # Inside the block of the K_DOWN if statement.
                 # TODO: assign 0 'TO' snake_dx.  We may have been moving left or right.  This cancels that movement out.
-                # TODO: assign SNAKE_SIZE 'TO' snake_dx. This moves the snake 1 SNAKE_SIZE down.
+                # TODO: assign SNAKE_SIZE 'TO' snake_dy. This moves the snake 1 SNAKE_SIZE down.
 
 
     # Add the head coordinate to the first index of the body coordinate list
@@ -102,9 +102,11 @@ while running:
 
     # Update the x,y position of the snakes head and make a new coordinate
     # TODO: add snake_dx 'TO' head_x
+    #that = that + this
+    #that+=this
     # TODO: add snake_dy 'TO' head_y
     # TODO: reassign (head_x, head_y, SNAKE_SIZE, SNAKE_SIZE) 'TO' head_coord
-
+#reassign that = this
     # Check for game over
 
     # Check for collisions
