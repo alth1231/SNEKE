@@ -39,11 +39,11 @@ score_text = font.render("Score: 0", True, GREEN, DARKRED)
 score_rect = score_text.get_rect()
 score_rect.topleft = (10, 10)
 
-game_over_text = font.render("Press any key to play again", True, DARKRED)
+game_over_text = font.render("GAMEOVER", True, DARKRED)
 game_over_rect = game_over_text.get_rect()
 game_over_rect.center = (WINDOW_WIDTH//2, WINDOW_HEIGHT//2 + 64)
 
-continue_text = font.render("Continue", True, RED, DARKGREEN)
+continue_text = font.render("Press any key to play again", True, RED, DARKGREEN)
 continue_rect = continue_text.get_rect()
 continue_rect.center = (WINDOW_WIDTH//2, WINDOW_HEIGHT//2 + 64)
 
